@@ -11,8 +11,8 @@ client      FL client: local LoRA fine-tuning, commit, prove, submit, reveal.
 aggregator  Fetches revealed updates, checks commitments, runs robust aggregation.
 challenger  Re-runs aggregation, opens disputes and votes.
 
-Milestone status: config and quantize are implemented; the other modules
-define their interfaces and raise NotImplementedError for now.
+Draft status: interfaces and docstrings are in place; functions that need the
+trained model or the compiled circuit raise NotImplementedError for now.
 """
 
 __version__ = "0.1.0"

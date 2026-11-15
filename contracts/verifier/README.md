@@ -1,9 +1,13 @@
 # contracts/verifier
 
-`Groth16Verifier.sol` will be **generated**, not written by hand, with
-`snarkjs zkey export solidityverifier` once the trusted setup for the
-norm-bound circuit (`circuits/norm_bound.circom`) is done (next milestone).
-The generated contract exposes
+`Groth16Verifier.sol` is **generated**, not written by hand. Create it with
+
+```bash
+npm run circuit:build
+```
+
+which runs `snarkjs zkey export solidityverifier` on the norm-bound circuit
+(`circuits/norm_bound.circom`). The generated contract exposes
 
 ```solidity
 function verifyProof(uint[2] calldata _pA, uint[2][2] calldata _pB,

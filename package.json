@@ -7,9 +7,11 @@
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",
+    "demo": "hardhat run scripts/demo.js",
     "node": "hardhat node",
     "deploy:local": "hardhat run scripts/deploy.js --network localhost",
-    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia"
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "circuit:build": "bash circuits/build_circuit.sh"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",

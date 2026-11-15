@@ -90,5 +90,5 @@ template NormBound(D, PACK) {
 
 // Draft size for early testing. The full model in the proposal (rank-4 LoRA on
 // two layers, ~26k parameters) uses D = 26114; adjust D and the Powers-of-Tau
-// file together when the trusted setup is run.
+// file together (see circuits/README.md).
 component main {public [normBoundSq, roundId, client]} = NormBound(1024, 15);

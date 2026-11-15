@@ -6,7 +6,7 @@
 //
 // On local networks MockVerifier is used unless USE_REAL_VERIFIER=true.
 // On any other network the snarkjs-generated Groth16Verifier must exist in
-// contracts/verifier/ (see contracts/verifier/README.md).
+// contracts/verifier/ (see circuits/README.md).
 // Addresses are written to deployments/<network>.json for the Python clients.
 const fs = require("fs");
 const path = require("path");
